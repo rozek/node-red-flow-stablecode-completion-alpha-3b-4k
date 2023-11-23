@@ -28,7 +28,7 @@ Start by [installing Node.js](https://nodejs.org/en) as described on their web p
 
 ### Node-RED ###
 
-"_[Node-RED](https://nodered.org/) is a flow-based, low-code development tool for visual programming developed originally by IBM..._" (according to [Wikipedia](https://en.wikipedia.org/wiki/Node-RED))
+"_[Node-RED](https://nodered.org/) is a flow-based, low-code development tool for visual programming developed originally by IBM..._" (according to [Wikipedia](https://en.wikipedia.org/wiki/Node-RED)).
 
 If not already done, install Node-RED as described on their "[Get Started](https://nodered.org/#get-started)" page.
 
@@ -46,7 +46,17 @@ cmake ..
 make -j
 ```
 
-Afterwards, 
+Afterwards, copy the executable `./bin/gpt-neox` into the Node-RED "User Directory" (by default, this folder is located at `$HOME/.node-red`).
+
+### StableCode-Completion-Alpha-3B-4K Flows ###
+
+If not already done, download the [8-bit quantization of the StableCode-Completion-Alpha-3B-4K model](https://huggingface.co/TheBloke/stablecode-completion-alpha-3b-4k-GGML/blob/main/stablecode-completion-alpha-3b-4k.ggmlv1.q8_0.bin) into the same folder that already contains your executables.
+
+> Nota bene: right now, the flows from this repository support the given model file only - if you prefer another one, you may simply change the model file name in the function nodes for text completion, tokenization and embeddings calculation.
+
+Now import the desired nodes and flows - if you want them all, just import file [StableCode-Completion-Alpha-3B-4K-Flows.json](https://raw.githubusercontent.com/rozek/node-red-flow-stablecode-completion-alpha-3b-4k/master/StableCode-Completion-Alpha-3B-4K-Flows.json).
+
+If you are new to Node-RED, [just follow the instructions from their docs](https://nodered.org/docs/user-guide/editor/workspace/import-export).
 
 
 
