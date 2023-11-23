@@ -16,6 +16,39 @@ Having the inference, tokenization and embedding calculation as a self-contained
 
 > Just a small note: if you like this work and plan to use it, consider "starring" this repository (you will find the "Star" button on the top right of this page), so that I know which of my repositories to take most care of.
 
+## Installation ##
+
+This section shows you how to install Node.js, Node-RED, GGML and the flows from this repository - feel free to skip the steps for those components you already installed before.
+
+### Node.js ###
+
+"_[Node.js](https://nodejs.org/en) is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser._" (according to [Wikipedia](https://en.wikipedia.org/wiki/Node.js))
+
+Start by [installing Node.js](https://nodejs.org/en) as described on their web page.
+
+### Node-RED ###
+
+"_[Node-RED](https://nodered.org/) is a flow-based, low-code development tool for visual programming developed originally by IBM..._" (according to [Wikipedia](https://en.wikipedia.org/wiki/Node-RED))
+
+If not already done, install Node-RED as described on their "[Get Started](https://nodered.org/#get-started)" page.
+
+### GGML ###
+
+[GGML](https://github.com/ggerganov/ggml) is a "Tensor library for machine learning" written in C
+
+From all of the examples in that project, we only need GPT-NeoX. Install it as described in its [README](https://github.com/ggerganov/ggml/tree/master/examples/gpt-neox) file, but skip the conversion step - we will download an already converted model instead:
+
+```
+git clone https://github.com/ggerganov/ggml
+cd ggml
+mkdir build && cd build
+cmake ..
+make -j
+```
+
+Afterwards, 
+
+
 
 
 
