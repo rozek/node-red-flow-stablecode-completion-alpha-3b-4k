@@ -36,7 +36,7 @@ If not already done, install Node-RED as described on their "[Get Started](https
 
 [GGML](https://github.com/ggerganov/ggml) is a "Tensor library for machine learning" written in C
 
-From all of the examples in that project, we only need GPT-NeoX. Install it as described in its [README](https://github.com/ggerganov/ggml/tree/master/examples/gpt-neox) file, but skip the conversion step - we will download an already converted model instead:
+From all of the examples in that project, we only need GPT-NeoX. Install it as described in its [README](https://github.com/ggerganov/ggml/tree/master/examples/gpt-neox) file, but skip the conversion step - we will later download an already converted model instead:
 
 ```
 git clone https://github.com/ggerganov/ggml
